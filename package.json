@@ -1,0 +1,27 @@
+{
+  "name": "blueocean-woo-order-map",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack --mode=development && sass ./resources/sass:./assets/css --style compressed",
+    "webpack": "webpack --mode=development",
+    "sass": "sass ./resources/sass:./assets/css --style compressed",
+    "sass-watch": "sass --watch ./resources/sass:./assets/css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blue-Ocean-Plus/blueocean-woo-order-map.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Blue-Ocean-Plus/blueocean-woo-order-mapissues"
+  },
+  "homepage": "https://github.com/Blue-Ocean-Plus/blueocean-woo-order-map#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
