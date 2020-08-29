@@ -1,0 +1,59 @@
+@import "../global/variables", "../global/fonts";
+
+input#bo_woo_order_map {
+  display: none;
+}
+
+button.fullscreen_bo_woo_order_map {
+  height: 20px;
+  font-size: 12px;
+  font-weight: 100;
+  padding: 0 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 33334;
+  background-color: #fff;
+  color: #000;
+
+  &:hover, &:focus {
+    background-color: #fff;
+  }
+
+}
+
+div.fullscreen-map {
+  position: fixed !important;
+  width: 100% !important;;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100% !important;
+  z-index: 99999;
+  border-radius: 0 !important;;
+}
+
+div#bo_woo_order_map_c {
+  width: 100%;
+  height: 338px;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+div#bo_woo_order_map_c_load {
+  width: 100%;
+  height: 338px;
+}
+
+div.fullscreen-map #bo_woo_order_map_c_load {
+  height: 100%;
+}
+
+
+.w-map-blue-ocean {
+  width: 100%;
+  height: 100%;
+}
