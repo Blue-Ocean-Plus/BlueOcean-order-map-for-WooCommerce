@@ -1,0 +1,110 @@
+@import "../global/variables", "../global/fonts";
+
+.wp-admin.toplevel_page_bo_woo_order_map,.wp-admin.settings_page_bo_woo_order_map {
+  background-color: #f8f8f8;
+  background-image: url("../../images/bg.jpg");
+
+  li.toplevel_page_bo_woo_order_map {
+
+    &:hover {
+
+      img {
+        filter: none;
+      }
+    }
+  }
+
+  .menu-top.toplevel_page_bo_woo_order_map {
+    a.toplevel_page_bo_woo_order_map {
+      align-items: center;
+      display: flex;
+      width: 100%;
+      font-family: "Exo 2", serif;
+
+      &.wp-menu-open {
+        background-color: $color-primary !important;
+      }
+
+      img {
+        padding-top: 7px !important;
+      }
+    }
+  }
+
+  .csf.csf-options.bo_woo_order_map {
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    font-family: "Exo 2", serif;
+
+
+    .csf-header-left {
+      width: 50%;
+
+      h1 {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        width: 100%;
+        color: #2d3436;
+
+        img {
+          padding-right: 7px;
+          padding-left: 7px;
+          max-height: 50px;
+        }
+      }
+    }
+
+    .csf-container {
+      border-radius: .5rem;
+    }
+
+    .csf-header-inner {
+      background: #ffffff !important;
+      border-radius: .5rem .5rem 0 0;
+    }
+
+    .csf-footer {
+      border-radius: 0 0 .5rem .5rem;
+      background: #ffffff;
+    }
+
+    .csf-header-right {
+
+      .csf-expand-all, .csf-search, .csf-buttons {
+        display: none;
+      }
+    }
+
+    .csf-warning-primary {
+      background-color: $color-warning !important;
+      border-color: $color-warning !important;
+    }
+
+    .button-primary {
+      background-color: $color-primary !important;
+      border-color: $color-primary !important;
+    }
+
+    .button-secondary {
+      color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+}
+
+li.toplevel_page_bo_woo_order_map {
+
+  &:hover {
+
+    img {
+      filter: invert(0.4) sepia(1) saturate(20) hue-rotate(169.2deg) brightness(1);
+    }
+  }
+
+  img {
+    width: 21px;
+    padding-top: 5px !important;
+  }
+}
+
