@@ -1,0 +1,163 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: BlueOcean woo order map\n"
+"POT-Creation-Date: 2020-08-30 13:36-0700\n"
+"PO-Revision-Date: 2020-08-30 13:34-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: lib\n"
+
+#: core/class/AdminMap.php:22
+msgid "Address on the map"
+msgstr ""
+
+#: core/class/AdminMap.php:61 core/class/Map.php:90 core/class/Map.php:121
+msgid "FullScreen"
+msgstr ""
+
+#: core/class/AdminMap.php:65 core/class/AdminMap.php:106 core/class/Map.php:93
+msgid "Close"
+msgstr ""
+
+#: core/class/AdminMap.php:99
+msgid "View map"
+msgstr ""
+
+#: core/class/AdminMap.php:99
+msgid "No maps selected"
+msgstr ""
+
+#: core/class/AdminMap.php:107
+msgid "Print"
+msgstr ""
+
+#: core/class/AdminMap.php:108
+msgid "Full Screen"
+msgstr ""
+
+#: core/class/Autoload.php:105
+msgid "ERROR CLASS EXIST CSF"
+msgstr ""
+
+#: core/class/Autoload.php:118 core/class/Autoload.php:119
+msgid "Woo Order Map"
+msgstr ""
+
+#: core/class/Autoload.php:139
+msgid "Main settings"
+msgstr ""
+
+#: core/class/Autoload.php:145
+msgid "Activation"
+msgstr ""
+
+#: core/class/Autoload.php:150
+msgid "Required"
+msgstr ""
+
+#: core/class/Autoload.php:158
+msgid "Default Location"
+msgstr ""
+
+#: core/class/Autoload.php:163
+msgid "Other Settings"
+msgstr ""
+
+#: core/class/Autoload.php:170
+msgid "Move to Settings submenu"
+msgstr ""
+
+#: core/class/Autoload.php:175
+msgid "Enable tracking"
+msgstr ""
+
+#: core/class/Autoload.php:176
+msgid ""
+"Allow usage of BlueOcean woocommerce order map to be tracked. To opt out, "
+"leave this box unticked. Your store remains untracked, and no data will be "
+"collected."
+msgstr ""
+
+#: core/class/Map.php:114
+msgid "Order delivery address on the map"
+msgstr ""
+
+#: core/class/Map.php:148
+msgid "Map value is required."
+msgstr ""
+
+#: core/class/Tracking.php:105
+#, php-format
+msgid ""
+"Want to help make <strong>%1$s</strong> even more awesome?\n"
+"                Allow %2$s to collect non-sensitive diagnostic data and "
+"usage information. (<a\n"
+"                        class=\"insights-data-we-collect\" href=\"#\">what "
+"we collect</a>)"
+msgstr ""
+
+#: core/class/Tracking.php:112
+msgid ""
+"Server environment details (php, mysql, server, WordPress\n"
+"                versions), Number of users in your site, Site language, "
+"Number of active and inactive plugins, Site name\n"
+"                and url, Your name and email address. No sensitive data is "
+"tracked."
+msgstr ""
+
+#: core/class/Tracking.php:121
+msgid "Allow"
+msgstr ""
+
+#: core/class/Tracking.php:123
+msgid "No thanks"
+msgstr ""
+
+#. translators: 1: Theme name. 2: Theme slug.
+#: core/class/Tracking.php:153
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: core/class/Tracking.php:195
+msgid "Unable to determine PHP version"
+msgstr ""
+
+#: core/class/Tracking.php:197
+msgid "Unable to determine what web server software is used"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "BlueOcean woo order map"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/Blue-Ocean-Plus/blueocean-woo-order-map"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "BlueOcean woocommerce order map"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "blueocean.plus"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://blueocean.plus"
+msgstr ""
