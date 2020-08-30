@@ -81,9 +81,12 @@ class Autoload
 
     }
 
-    static function get_option($name)
+    static function get_option($name = null)
     {
         $options = get_option(self::$prefix); // unique id of the framework
+
+        if ($name == null)
+            return $options;
 
         if (isset($options[$name]))
             return $options[$name];
@@ -176,11 +179,44 @@ class Autoload
         ));
     }
 
-    public static function alert($msg, $type = 'error')
+    public static function alert($msg, $type = 'error', $id = null)
     {
+
+        if ($id != null) {
+            $remove = false;
+
+            $prefix = self::$prefix;
+
+            $url = explode("?", $_SERVER['REQUEST_URI']);
+
+            if (!isset($url[1])) {
+                $url = "?remove-notice-{$id}-{$prefix}=1";
+            } else {
+                $url = $url[1] . "&remove-notice-{$id}-{$prefix}=1";
+            }
+
+
+            if (isset($_GET["remove-notice-{$id}-{$prefix}"]))
+                if (get_option("remove-notice-{$id}-{$prefix}") !== false) {
+                    update_option("remove-notice-{$id}-{$prefix}", true);
+                } else {
+                    add_option("remove-notice-{$id}-{$prefix}", true);
+                }
+
+            if (get_option("remove-notice-{$id}-{$prefix}") !== false) {
+                $remove = get_option("remove-notice-{$id}-{$prefix}");
+            }
+            if ($remove) return null;
+        }
         ?>
-        <div class="notice notice-<?= $type ?> is-dismissible" style="display: block!important">
-            <p><?= $msg ?></p>
+        <div class="notice notice-<?= $type ?>" style="position: relative">
+            <p>
+                <?= $msg ?>
+            </p>
+            <?php if ($id != null) { ?>
+                <a href="<?= $url ?>" class="notice-dismiss"
+                   style="text-decoration: none"> </a>
+            <?php } ?>
         </div>
         <?php
     }
