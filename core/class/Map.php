@@ -111,7 +111,7 @@ class Map extends Autoload
                 ),
                 'label' => __('Order delivery address on the map', 'bo_woo_order_map'),
                 'placeholder' => '',
-                'required' => true,
+                'required' => self::get_option('required') ? true : false,
             ), $checkout->get_value('bo_woo_order_map'));
             ?>
             <div id="bo_woo_order_map_c">
