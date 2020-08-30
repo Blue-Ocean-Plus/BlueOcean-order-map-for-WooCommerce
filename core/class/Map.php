@@ -16,6 +16,8 @@ class Map extends Autoload
     {
 
         add_action('woocommerce_before_order_notes', 'BlueOcean\WooCommerceOrderMap\Map::map_checkout_field');
+        add_action('woocommerce_checkout_process', 'BlueOcean\WooCommerceOrderMap\Map::checkout_field_process');
+        add_action('woocommerce_checkout_update_order_meta', 'BlueOcean\WooCommerceOrderMap\Map::checkout_update_order_meta');
 
     }
 
@@ -138,6 +140,20 @@ class Map extends Autoload
         // load script
         self::script_map();
 
+    }
+
+    public static function checkout_field_process()
+    {
+        if (self::get_option('required') && !$_POST['bo_woo_order_map'])
+            wc_add_notice(__('Map value is required.', 'bo_woo_order_map'), 'error');
+    }
+
+    public static function checkout_update_order_meta($order_id)
+    {
+        if (!empty($_POST['bo_woo_order_map'])) {
+            update_user_meta(get_current_user_id(), 'blue_ocean_map', sanitize_text_field($_POST['bo_woo_order_map']));
+            update_post_meta($order_id, 'blue_ocean_map', sanitize_text_field($_POST['bo_woo_order_map']));
+        }
     }
 }
 
