@@ -23,15 +23,20 @@ class Autoload
         add_action('plugins_loaded', 'BlueOcean\WooCommerceOrderMap\Autoload::language');
         add_action('plugins_loaded', 'BlueOcean\WooCommerceOrderMap\Autoload::admin_page');
         add_action('admin_enqueue_scripts', 'BlueOcean\WooCommerceOrderMap\Autoload::admin_enqueue', 20, 1);
+        add_action('admin_enqueue_scripts', 'BlueOcean\WooCommerceOrderMap\Autoload::wp_enqueue_scripts', 20, 1);
         add_action('wp_enqueue_scripts', 'BlueOcean\WooCommerceOrderMap\Autoload::wp_enqueue_scripts', 20, 1);
 
         if (self::get_option('active'))
             Map::init();
+
+        AdminMap::init();
     }
 
     static private function includes()
     {
         include(plugin_dir_path(BO_WOO_ORDER_MAP) . '/core/class/Map.php');
+
+        include(plugin_dir_path(BO_WOO_ORDER_MAP) . '/core/class/AdminMap.php');
 
         // load global functions
         include(plugin_dir_path(BO_WOO_ORDER_MAP) . '/core/functions/global.php');
@@ -66,7 +71,7 @@ class Autoload
 
         wp_register_style('bo-woo-order-map-leaflet', plugins_url('assets/lib/leaflet/leaflet.css', BO_WOO_ORDER_MAP), []);
 
-        wp_register_script('bo-woo-order-map-site', plugins_url('assets/lib/leaflet/leaflet.js', BO_WOO_ORDER_MAP), []);
+        wp_register_script('bo-woo-order-map-site', plugins_url('assets/lib/leaflet/leaflet.js', BO_WOO_ORDER_MAP), ['jquery']);
 
         wp_register_style('bo-woo-order-map-site', plugins_url('assets/css/site/core.css', BO_WOO_ORDER_MAP), []);
 
