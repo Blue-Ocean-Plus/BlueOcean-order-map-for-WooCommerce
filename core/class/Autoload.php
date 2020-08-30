@@ -140,6 +140,9 @@ class Autoload
                 array(
                     'id' => 'default',
                     'type' => 'map',
+                    'settings' => array(
+                        'scrollWheelZoom' => true,
+                    ),
                     'title' => __('Default Location', 'bo_woo_order_map'),
                 ),
             )
