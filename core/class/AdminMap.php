@@ -41,7 +41,7 @@ class AdminMap extends Autoload
                     }).setView([ <?=$map[0]?>, <?=$map[1]?>], <?=$map[2]?>);
 
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19
+                    maxZoom: 16
                 }).addTo(app);
 
                 L.marker([<?=$map[0]?>, <?=$map[1]?>], {
