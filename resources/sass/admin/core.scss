@@ -1,6 +1,6 @@
-@import "../global/variables", "../global/fonts";
+@import "../global/variables", "../global/fonts", "./rtl";
 
-.wp-admin.toplevel_page_bo_woo_order_map,.wp-admin.settings_page_bo_woo_order_map {
+.wp-admin.toplevel_page_bo_woo_order_map, .wp-admin.settings_page_bo_woo_order_map {
   background-color: #f8f8f8;
   background-image: url("../../images/bg.jpg");
 
