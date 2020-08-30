@@ -161,7 +161,12 @@ class Autoload
                     'id' => 'submenu',
                     'type' => 'checkbox',
                     'title' => __('Move to Settings submenu', 'bo_woo_order_map'),
-                    'default' => 'panel',
+                ),
+                array(
+                    'id' => 'tracking',
+                    'type' => 'checkbox',
+                    'title' => __('Enable tracking', 'bo_woo_order_map'),
+                    'desc' => __('Allow usage of BlueOcean woocommerce order map to be tracked. To opt out, leave this box unticked. Your store remains untracked, and no data will be collected.', 'bo_woo_order_map')
                 ),
             )
         ));
