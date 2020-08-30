@@ -30,8 +30,8 @@ class Map extends Autoload
         if ($user_data != '') {
             $data = explode('-', $user_data);
             $default = ['lat' => $data[0], 'lng' => $data[1], 'zoom' => $data[2]];
-        } elseif (isset($map['default']['latitude']) && $map['default']['latitude'] != '') {
-            $default = ['lat' => $map['default']['latitude'], 'lng' => $map['default']['longitude'], 'zoom' => $map['default']['zoom']];
+        } elseif (isset($map['latitude']) && $map['latitude'] != '') {
+            $default = ['lat' => $map['latitude'], 'lng' => $map['longitude'], 'zoom' => $map['zoom']];
         }
 
         return $default;
