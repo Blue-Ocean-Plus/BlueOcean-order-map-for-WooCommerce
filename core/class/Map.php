@@ -115,7 +115,8 @@ class Map extends Autoload
             ), $checkout->get_value('bo_woo_order_map'));
             ?>
             <div id="bo_woo_order_map_c">
-                <button class="fullscreen_bo_woo_order_map" type="button"><?=__('FullScreen', 'bo_woo_order_map')?></button>
+                <button class="fullscreen_bo_woo_order_map"
+                        type="button"><?= __('FullScreen', 'bo_woo_order_map') ?></button>
                 <div id="bo_woo_order_map_c_load"></div>
             </div>
 
@@ -126,7 +127,7 @@ class Map extends Autoload
     public static function map_checkout_field($checkout)
     {
         // load styles
-        wp_print_styles(['bo-woo-order-map-leaflet','bo-woo-order-map-site']);
+        wp_print_styles(['bo-woo-order-map-leaflet', 'bo-woo-order-map-site']);
 
         // load javascript
         wp_print_scripts('bo-woo-order-map-site');
