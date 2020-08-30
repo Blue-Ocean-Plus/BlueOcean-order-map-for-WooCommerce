@@ -30,6 +30,8 @@ class Autoload
             Map::init();
 
         AdminMap::init();
+        
+        Tracking::init();
     }
 
     static private function includes()
@@ -37,6 +39,8 @@ class Autoload
         include(plugin_dir_path(BO_WOO_ORDER_MAP) . '/core/class/Map.php');
 
         include(plugin_dir_path(BO_WOO_ORDER_MAP) . '/core/class/AdminMap.php');
+
+        include(plugin_dir_path(BO_WOO_ORDER_MAP) . '/core/class/Tracking.php');
 
         // load global functions
         include(plugin_dir_path(BO_WOO_ORDER_MAP) . '/core/functions/global.php');
