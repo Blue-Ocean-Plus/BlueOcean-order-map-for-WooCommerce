@@ -79,6 +79,15 @@ class AdminMap extends Autoload
                 document.querySelector('.print-map').addEventListener('click', () => {
                     window.print();
                 });
+                document.querySelector('span.share-map').addEventListener('click', () => {
+                    document.querySelector('input.share-map').select();
+
+                    document.execCommand("copy") ?
+                        alert('<?=__('The link was successfully copied to your clipboard', 'bo_woo_order_map')?>')
+                        :
+                        alert('<?=__('The operation encountered an error', 'bo_woo_order_map')?>');
+
+                });
                 document.querySelector('.view-in-blue-ocean-map').addEventListener('click', () => {
                     document.querySelector('.main-box-blue-ocean-map').style.display = 'flex';
                     setTimeout(() => app.setView([location.lat, location.lng], location.zoom), 300);
@@ -99,25 +108,36 @@ class AdminMap extends Autoload
                 <?= $map ? __('View map', 'bo_woo_order_map') : __('No maps selected', 'bo_woo_order_map') ?>
             </li>
         </ul>
-        <?php if ($map) { ?>
-        <div class="main-box-blue-ocean-map">
-            <div class="close-map-bg"></div>
-            <div class="content-box-blue-ocean-map">
-                <span class="close-map"><?= __('Close', 'bo_woo_order_map') ?></span>
-                <span class="print-map"><?= __('Print', 'bo_woo_order_map') ?></span>
-                <span class="full-screen"><?= __('Full Screen', 'bo_woo_order_map') ?></span>
-                <div id="blue_ocean_map_c">
-                    <div id="blue_ocean_map_c_load" class="w-blue-ocean-map"></div>
+        <?php if ($map)
+        $map = explode('-', $map);
+        { ?>
+            <div class="main-box-blue-ocean-map">
+                <div class="close-map-bg"></div>
+                <div class="content-box-blue-ocean-map">
+                    <input type="text" class="share-map"
+                           value="<?= "https://maps.google.com/maps?q={$map[0]}%2C{$map[1]}&z=17&hl=en" ?>">
+                    <div class="tools-box-map">
+                        <div>
+                            <span class="close-map"><?= __('Close', 'bo_woo_order_map') ?></span>
+                            <span class="print-map"><?= __('Print', 'bo_woo_order_map') ?></span>
+                            <span class="share-map"><?= __('Share', 'bo_woo_order_map') ?></span>
+                        </div>
+                        <div>
+                            <span class="full-screen"><?= __('Full Screen', 'bo_woo_order_map') ?></span>
+                        </div>
+                    </div>
+                    <div id="blue_ocean_map_c">
+                        <div id="blue_ocean_map_c_load" class="w-blue-ocean-map"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <?php
-        // load styles
-        wp_print_styles(['bo-woo-order-map-leaflet']);
+            <?php
+            // load styles
+            wp_print_styles(['bo-woo-order-map-leaflet']);
 
-        // load javascript
-        wp_print_scripts('bo-woo-order-map-site');
-    }
+            // load javascript
+            wp_print_scripts('bo-woo-order-map-site');
+        }
 
     }
 
