@@ -3,7 +3,7 @@
 <strong>Tested Wordpress:</strong> 5.5 <br>
 <strong>Requires PHP:</strong> 5.6 <br><br>
 
-<h4>Description</h4> <br>
+<h4>Description</h4>
 BlueOcean woo order map plugin <br>
 This plugin is a tool for adding a location in the map of the order page in WooCommerce. <br>
 Your customer can find the address and pin it on the map using this tool, <br>
