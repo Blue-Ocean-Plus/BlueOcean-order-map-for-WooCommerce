@@ -93,7 +93,8 @@ class Map extends Autoload
                         e.target.innerHTML = '<?=__('Close', 'bo_woo_order_map')?>';
                     }
                     app._onResize();
-                    setTimeout(() => app.setView([location.lat, location.lng], location.zoom), 300)
+                    if (location.hasOwnProperty('lat'))
+                        setTimeout(() => app.setView([location.lat, location.lng], location.zoom), 300)
                 });
             });
         </script>
