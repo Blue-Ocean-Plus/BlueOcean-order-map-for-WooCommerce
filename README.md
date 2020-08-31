@@ -1,4 +1,4 @@
-<h1>BlueOcean woocommerce order map</h1><br><br>
+<h1>BlueOcean woocommerce order map</h1>
 **Requires Wordpress:** 5.0 <br>
 **Tested Wordpress:** 5.5 <br>
 **Requires PHP:** 5.6 <br>
