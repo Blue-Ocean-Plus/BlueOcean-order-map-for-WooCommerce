@@ -1,7 +1,7 @@
 <h1>BlueOcean woocommerce order map</h1>
 <strong>Requires Wordpress:</strong> 5.0 <br>
 <strong>Tested Wordpress:</strong> 5.5 <br>
-<strong>Requires PHP:</strong> 5.6 <br><br>
+<strong>Requires PHP:</strong> 5.6 <br>
 
 <h3>Description</h3>
 BlueOcean woo order map plugin <br>
