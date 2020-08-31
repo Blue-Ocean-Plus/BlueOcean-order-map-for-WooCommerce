@@ -90,7 +90,8 @@ class AdminMap extends Autoload
                 });
                 document.querySelector('.view-in-blue-ocean-map').addEventListener('click', () => {
                     document.querySelector('.main-box-blue-ocean-map').style.display = 'flex';
-                    setTimeout(() => app.setView([location.lat, location.lng], location.zoom), 300);
+                    if (location.hasOwnProperty('lat'))
+                        setTimeout(() => app.setView([location.lat, location.lng], location.zoom), 300);
                     setTimeout(() => app._onResize(), 300)
 
                 })
