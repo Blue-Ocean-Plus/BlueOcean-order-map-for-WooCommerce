@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("jQuery(document).ready(function () {\n    document.querySelector('.updated.blue-ocean a.insights-data-we-collect').addEventListener('click', e => {\n        let d = document.querySelector('.updated.blue-ocean .description');\n        if (d.style.display === 'none') {\n            d.style.display = 'flex';\n        } else {\n            d.style.display = 'none';\n        }\n    });\n});\n\n//# sourceURL=webpack:///./resources/js/admin.js?");
+eval("jQuery(document).ready(function () {\n    if (document.querySelector('.updated.blue-ocean a.insights-data-we-collect'))\n        document.querySelector('.updated.blue-ocean a.insights-data-we-collect').addEventListener('click', e => {\n            let d = document.querySelector('.updated.blue-ocean .description');\n            if (d.style.display === 'none') {\n                d.style.display = 'flex';\n            } else {\n                d.style.display = 'none';\n            }\n        });\n});\n\n//# sourceURL=webpack:///./resources/js/admin.js?");
 
 /***/ })
 
