@@ -39,8 +39,6 @@ class Tracking extends Autoload
 
         if (!wp_next_scheduled("tracking-scheduled-{$prefix}")) {
             wp_schedule_event(time(), 'daily', "tracking-scheduled-{$prefix}");
-
-            self::send_request('register_activation_hook');
         }
     }
 
@@ -69,8 +67,6 @@ class Tracking extends Autoload
             } else {
                 add_option(self::$prefix, $option);
             }
-
-            self::send_request(false);
 
         }
 

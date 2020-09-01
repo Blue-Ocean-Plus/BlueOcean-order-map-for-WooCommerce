@@ -31,7 +31,7 @@ class Autoload
 
         AdminMap::init();
         
-//        Tracking::init();
+        Tracking::init();
     }
 
     static private function includes()
