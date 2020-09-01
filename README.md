@@ -15,6 +15,6 @@ So you have a more accurate address and the package will deliver faster.  <br>
 - showing the last user-selected location.<br>
 - showing the Default selected location.<br>
 - super fast and responsive<br>
-- Ability to specify the default position to the user in the initial load of the map<br>
-- Ability to print the map and share the map link<br>
+- choosing a default user in the first load<br>
+- printing the map and sharing it<br>
 - compatible with the latest versions of WooCoomerce and WordPress.<br>
