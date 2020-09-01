@@ -21,6 +21,6 @@ Features:
 - showing the last user-selected location.
 - showing the Default selected location.
 - super fast and responsive
-- Ability to specify the default position to the user in the initial load of the map
-- Ability to print the map and share the map link
+- choosing a default user in the first load
+- printing the map and sharing it
 - compatible with the latest versions of WooCoomerce and WordPress.
