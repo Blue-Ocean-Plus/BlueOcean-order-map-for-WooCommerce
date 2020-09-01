@@ -30,7 +30,7 @@ class Map extends Autoload
         $user_data = get_user_meta(get_current_user_id(), 'blue_ocean_map', true);
 
         if ($user_data != '') {
-            $data = explode('-', $user_data);
+            $data = explode('_', $user_data);
             $default = ['lat' => $data[0], 'lng' => $data[1], 'zoom' => $data[2]];
         } elseif (isset($map['latitude']) && $map['latitude'] != '') {
             $default = ['lat' => $map['latitude'], 'lng' => $map['longitude'], 'zoom' => $map['zoom']];
