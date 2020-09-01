@@ -24,7 +24,7 @@ class AdminMap extends Autoload
 
     private static function script($map)
     {
-        $map = explode('-', $map);
+        $map = explode('_', $map);
         ?>
         <script>
             jQuery(document).ready(function () {
@@ -110,7 +110,7 @@ class AdminMap extends Autoload
             </li>
         </ul>
         <?php if ($map)
-        $map = explode('-', $map);
+        $map = explode('_', $map);
         { ?>
             <div class="main-box-blue-ocean-map">
                 <div class="close-map-bg"></div>

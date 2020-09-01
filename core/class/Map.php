@@ -78,7 +78,7 @@ class Map extends Autoload
 
                     app.setView([location.lat, location.lng], location.zoom);
 
-                    document.querySelector('input#bo_woo_order_map').value = `${location.lat}-${location.lng}-${location.zoom}`;
+                    document.querySelector('input#bo_woo_order_map').value = `${location.lat}_${location.lng}_${location.zoom}`;
 
                 });
 
