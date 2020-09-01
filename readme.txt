@@ -1,4 +1,4 @@
-=== BlueOcean woocommerce order map ===
+=== BlueOcean order map for WooCommerce ===
 Requires at least: 5.0
 Tested up to: 5.5
 Requires PHP: 5.6
@@ -6,11 +6,11 @@ Stable tag: 1.0.0
 License: GPLv2
 License URI: https://github.com/Blue-Ocean-Plus/blueocean-woo-order-map/blob/master/LICENSE
 
-BlueOcean woo order map plugin
+BlueOcean order map for WooCommerce plugin
 This plugin is a tool for adding a location in the map of the order page in WooCommerce.
 
 == Description ==
-BlueOcean woo order map plugin
+BlueOcean order map for WooCommerce plugin
 This plugin is a tool for adding a location in the map of the order page in WooCommerce.
 Your customer can find the address and pin it on the map using this tool,
 So you have a more accurate address and the package will deliver faster.
