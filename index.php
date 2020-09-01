@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: BlueOcean woo order map
+ * Plugin Name: BlueOcean order map for WooCommerce
  * Plugin URI: https://wordpress.org/plugins/blueocean-woo-order-map
- * Description: BlueOcean woocommerce order map
+ * Description: BlueOcean order map for WooCommerce
  * Version: 1.0
  * Author: blueocean.plus
  * Author URI: http://blueocean.plus
