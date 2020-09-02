@@ -16,11 +16,6 @@ This plugin is a tool for adding a location in the map of the order page in WooC
 Your customer can find the address and pin it on the map using this tool,
 So you have a more accurate address and the package will deliver faster.
 
-== Changelog ==
-
-= 1.0.1 =
-* fix plugin url
-
 Features:
 - using Openstreetmap service.
 - no tokens are needed for using maps.
@@ -30,3 +25,8 @@ Features:
 - choosing a default user in the first load
 - printing the map and sharing it
 - compatible with the latest versions of WooCoomerce and WordPress.
+
+== Changelog ==
+
+= 1.0.1 =
+* fix plugin url
