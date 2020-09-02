@@ -18,7 +18,7 @@ So you have a more accurate address and the package will deliver faster.
 == Changelog ==
 
 = 1.0.1 =
-* fix plugin url 
+* fix plugin url
 
 Features:
 - using Openstreetmap service.
