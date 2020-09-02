@@ -1,5 +1,5 @@
 === BlueOcean order map for WooCommerce ===
-Contributors: blueocean
+Contributors: blueoceanplus
 Requires at least: 5.0
 Tested up to: 5.5
 Requires PHP: 5.6
