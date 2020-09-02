@@ -2,7 +2,8 @@
 Requires at least: 5.0
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
+Contributors: blueocean
 License: GPLv2
 License URI: https://github.com/Blue-Ocean-Plus/blueocean-woo-order-map/blob/master/LICENSE
 
