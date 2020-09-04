@@ -28,5 +28,8 @@ Features:
 
 == Changelog ==
 
+= 1.0.2 =
+* fix tracking
+
 = 1.0.1 =
 * fix plugin url
