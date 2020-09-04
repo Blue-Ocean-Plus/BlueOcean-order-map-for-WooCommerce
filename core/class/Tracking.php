@@ -48,7 +48,7 @@ class Tracking extends Autoload
         $prefix = self::$prefix;
         $option = self::get_option();
         if (isset($_GET["allow-tracking-{$prefix}"])) {
-            
+
             $option['tracking'] = true;
             if (get_option(self::$prefix) !== false) {
                 update_option(self::$prefix, $option);
@@ -194,8 +194,8 @@ class Tracking extends Autoload
             'server' => $wpdb->get_var('SELECT VERSION()'),
             'mysql' => self::mysql_ver(),
             'users' => count_users()['total_users'],
-            'theme' => self::theme_info(),
-            'plugins' => self::plugins(),
+            'theme' => json_encode(self::theme_info()),
+            'plugins' => json_encode(self::plugins()),
             'tracking' => $status,
         ];
     }
